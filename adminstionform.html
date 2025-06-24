@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Valluvar Sports</a>
+        <ul class="nav-links">
+            <li><a href="adminstionform.html">Application Form</a></li>
+            <li><a href="studentlist.html">Team List</a></li>
+            <li><a href="scoreboard.html">Score Board</a></li>
+        </ul>
+    </nav>
+
+    <div class="form-container">
+        <h1>Valluvar College Sports Application Form</h1>
+        <p>Please fill out the form below to apply for admission.</p>
+
+        <form id="applicationForm">
+            <!-- College Details Section -->
+            <fieldset>
+                <legend>College Details</legend>
+                <div class="form-group">
+                    <label for="collegeName">College Name</label>
+                    <input type="text" id="collegeName" name="collegeName" placeholder="Enter your college name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Valluvar@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g., 123-456-7890" required>
+                </div>
+                
+            </fieldset>
+
+            <!-- Academic Details Section -->
+            <fieldset>
+                <legend>Team Details</legend>
+                <div class="form-group">
+                    <label for="teamName">Team Name</label>
+                    <input type="text" id="teamName" name="teamName" placeholder="Enter your team name" required>
+                </div>
+                <div class="form-group">
+                    <label for="teamSize">Team Size</label>
+                    <input type="number" id="teamSize" name="teamSize" min="1" max="50" placeholder="Enter team size" required>
+                </div>
+                <div class="form-group">
+                    <label for="gameName">Name of Game</label>
+                    <input type="text" id="gameName" name="gameName" placeholder="Enter the name of the game" required>
+                </div>
+            </fieldset>
+
+            <!-- Course Selection -->
+            <fieldset>
+                <legend>Department</legend>
+                <div class="form-group">
+                    <label for="course">Select Your Desired Department</label>
+                    <select id="course" name="course" required>
+                        <option value="" disabled selected>-- Choose a Department --</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Business Administration">Business Administration</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                        <option value="Fine Arts">Fine Arts</option>
+                        <option value="Psychology">Psychology</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Submission -->
+            <div class="form-group">
+                 <button type="submit">Submit Application</button>
+            </div>
+        </form>
+    </div>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
