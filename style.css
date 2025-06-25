@@ -1,0 +1,328 @@
+/* ==========================================================================
+   Main Stylesheet for College Application
+   ========================================================================== */
+
+/* General Body Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- Form Styles --- */
+
+.form-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #0056b3;
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* Important for padding and width */
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.15);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #004494;
+}
+
+
+/* --- Table Styles (Modern & Clean Design) --- */
+
+.table-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px 30px 30px 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    border: #0e0e0e 1px solid;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 0.95em;
+    border: #0e0e0e 1px solid; /* Subtle border for the table */
+    border-radius: 8px;
+}
+
+/* Header styles */
+th {
+    background-color: transparent; /* Removed background for a modern feel */
+    color: #0e0e0e; /* Softer text color */
+    font-weight: 600;
+   
+    text-align: left;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-bottom: 2px solid #f0f0f0; /* Light border at the bottom */
+}
+
+/* Cell styles */
+td {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0; /* Lighter border for each row */
+    color: #333;
+}
+
+/* Remove default striping for a cleaner look */
+tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+
+/* Hover effect for the entire row */
+tbody tr:hover {
+    background-color: #f8f9fa; /* Very light grey on hover */
+}
+
+/* Style for the last row to remove the bottom border */
+tbody tr:last-child td {
+    border-bottom: none;
+}
+.scoreboard-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.match-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+    overflow: hidden; /* Ensures child elements conform to rounded corners */
+    transition: transform 0.2s ease-in-out;
+}
+
+.match-card:hover {
+    transform: translateY(-5px);
+}
+
+.match-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f9fc;
+    padding: 12px 20px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.game-name {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.match-status {
+    font-size: 0.8em;
+    padding: 5px 12px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-live {
+    background-color: #e63946; /* Red for Live */
+    animation: pulse 1.5s infinite;
+}
+
+.status-finished {
+    background-color: #6c757d; /* Grey for Finished */
+}
+
+.status-upcoming {
+    background-color: #2a9d8f; /* Teal for Upcoming */
+}
+
+.match-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.team {
+    text-align: center;
+    width: 40%; /* Give teams space */
+}
+
+.team-name {
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.college-name {
+    display: block;
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-top: 4px;
+}
+
+.team-score {
+    display: block;
+    font-size: 3em;
+    font-weight: 700;
+    color: #343a40;
+    margin-top: 10px;
+}
+
+.vs-separator {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #adb5bd;
+}
+
+/* Animation for the "LIVE" badge */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(230, 57, 70, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(230, 57, 70, 0);
+    }
+}
+/* --- Navigation Bar Styles --- */
+
+/* The main navbar container */
+.navbar {
+    background-color: #0056b3; /* Primary blue color */
+    padding: 0 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between; /* Pushes logo and links apart */
+    align-items: center;
+    height: 60px;
+}
+
+/* The logo or brand name */
+.navbar .logo {
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* The list of navigation links */
+.navbar .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Each link item */
+.navbar .nav-links li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px 15px; /* Makes the clickable area larger */
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for links */
+.navbar .nav-links li a:hover {
+    background-color: #004494; /* A slightly darker blue */
+}
+
+/* The style for the CURRENTLY ACTIVE page link */
+.navbar .nav-links li.active a {
+    background-color: #003366; /* A much darker blue to indicate "you are here" */
+    font-weight: bold;
+}
+
+/* Adjust main content containers to be below the navbar */
+/* This is important to prevent content from being hidden */
+.form-container,
+.table-container,
+.scoreboard-container {
+    margin-top: 80px; /* Give some space below the navbar */
+}
